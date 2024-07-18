@@ -56,11 +56,43 @@ switch (n) {
 }
 
 
+// Set alarm on monday to friday different and for saturday and sunday different
+
+// old syntax
+String day="Wednesday";
+
+// switch(day){
+    //     case "Saturday","Sunday":
+//     System.out.println("12PM");
+//     break;
+
+//     case "Monday":
+//     System.out.println("8AM");
+//     break;
+
+//     default:
+//     System.out.println("8:30AM");
+// }
+String Result="";
+Result =switch(day){
+    case "Saturday","Sunday"-> Result="12PM";
+    
+    case "Monday"->Result="8:30AM";
+    default->Result="8:30AM";
+};
+System.out.println(Result);
 
 
 
+String Day="Wednesday";
 
+String Result1=" ";
+Result1 =switch(Day){
+    case "Saturday","Sunday":yield "12PM";
 
-    }
+    case "Monday": yield "8:30AM";
+    default: yield "8:30AM";
+};
+System.out.println(Result1);
 
 }

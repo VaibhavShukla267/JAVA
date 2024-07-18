@@ -1,4 +1,4 @@
-package JAVABASICS.BasicsPart2;
+package BasicsPart2;
 
 public class Type
  {
